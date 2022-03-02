@@ -13,19 +13,25 @@
   <body>
     <div class="container-fluid">
     <div class="d-flex align-items-center">
-      <h1 class="m-4">EMINEM</h1> <button class="btn-eminem">Show</button> <button class="btn-metallica-d">Show</button>
+      <h1 class="m-4">EMINEM</h1> 
+      <button class="btn-eminem">Show</button> 
+      <button onclick="remove(firstRow)"  class="btn-metallica-d">Remove</button>
+      <button onclick="getUnique(eminem)"  class="btn-metallica-d">getUnique</button>
     </div>
       <div class="row eminem">
     </div>
 
     <div class="d-flex align-items-center">
-      <h1 class="m-4">Metallica</h1> <button class="btn-metallica">Show</button> <button class="btn-metallica-d">Show</button>
+      <h1 class="m-4">Metallica</h1> 
+        <button class="btn-metallica">Show</button> 
+        <button onclick="remove(secondRow)" class="btn-metallica-d">Remove</button>
     </div>
     <div class="row metallica">
     </div>
 
     <div class="d-flex align-items-center">
-      <h1 class="m-4">Behemoth</h1> <button class="btn-behemoth">Show</button> <button class="btn-metallica-d">Show</button>
+      <h1 class="m-4">Behemoth</h1> <button class="btn-behemoth">Remove</button> 
+      <button onclick="remove(thirdRow)" class="btn-metallica-d">Show</button>
     </div>
     <div class="row behemoth">
     </div>

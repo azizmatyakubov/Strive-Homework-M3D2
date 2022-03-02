@@ -22,6 +22,9 @@ const show = (where, name)=> {
     
         .then(result => {
             for(let j=0; j<=result.data.length; j++) {
+
+
+
                 console.log(result.data[j])
                 let code = `
                 <div class="col-2">
@@ -42,6 +45,9 @@ const show = (where, name)=> {
         })
     }
 
+const remove = (wheres) => {
+    wheres.innerHTML = '';
+}
 
 
 document.querySelector('.btn-eminem').addEventListener('click', ()=> show(firstRow, Eminem))
@@ -49,6 +55,3 @@ document.querySelector('.btn-metallica').addEventListener('click', ()=> show(sec
 document.querySelector('.btn-behemoth').addEventListener('click', ()=> show(thirdRow, Behemoth))
 
 
-document.querySelector('.btn-eminem-d').addEventListener('click', ()=> show(firstRow, Eminem))
-document.querySelector('.btn-metallica-d').addEventListener('click', ()=> show(secondRow, Metallica))
-document.querySelector('.btn-behemoth-d').addEventListener('click', ()=> show(thirdRow, Behemoth))
